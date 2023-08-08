@@ -1,0 +1,181 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+body{
+    height: 100vh;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    background: hsl(225, 100%, 94%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-radius: 25px;
+    max-width: 450px;
+    min-height: 700px;
+    overflow: hidden;
+    background: white;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.summary{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+}
+
+.summary p{
+    font-size: 20px;
+}
+
+.annualPlan{
+    display: flex;
+    background: hsl(225, 100%, 98%);
+    min-height: 100px;
+    min-width: 355px;
+    margin: 0 auto;
+    border-radius: 15px;
+    align-items: center;
+}
+
+.annualPlan img{
+    padding: 25px;
+}
+
+.annualPlan a {
+    flex-grow: 1;
+    text-align: end;
+    padding: 30px;
+}
+
+.annualPlan p{
+    color: hsl(224, 23%, 55%);
+    margin: 0;
+}
+
+.payment{
+    color: white;
+    background: hsl(245, 75%, 52%);
+    width: 355px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 40px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 900;
+    box-shadow: 2px 4px 8px 0px hsl(245deg 75% 52%);
+    font-size: 16px;
+}
+
+.cancel{
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+    font-weight: 900;
+    padding: 35px;
+}
+
+button{
+    cursor: pointer;
+}
+
+.payment:active{
+    background: #766CF1;
+}
+
+.cancel:hover{
+    color: black;
+}
+
+.annualPlan a:hover{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 415px) {
+    
+
+    body{
+        height: 100vh;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        background: hsl(225, 100%, 94%);
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        border-radius: 25px;
+        max-width: 330px;
+        min-height: 570px;
+        overflow: hidden;
+        background: white;
+        font-family: 'Red Hat Display', sans-serif;
+    }
+
+    .summary{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .annualPlan{
+        display: flex;
+        background: hsl(225, 100%, 98%);
+        min-height: 80px;
+        min-width: 280px;
+        margin: 0 auto;
+        border-radius: 15px;
+        align-items: center;
+    }
+
+    .annualPlan img{
+        padding: 15px;
+    }
+
+    .annualPlan a {
+        flex-grow: 1;
+        text-align: end;
+        padding: 20px;
+    }
+
+    .annualPlan p{
+        color: hsl(224, 23%, 55%);
+        margin: 0;
+    }
+
+    .payment{
+        color: white;
+        background: hsl(245, 75%, 52%);
+        width: 280px;
+        height: 50px;
+        margin: 0 auto;
+        margin-top: 20px;
+        border: none;
+        border-radius: 10px;
+        font-weight: 900;
+        box-shadow: 2px 4px 8px 0px hsl(245deg 75% 52%);
+    }
+
+    .cancel{
+        background: none;
+        border: none;
+        font-size: 16px;
+        color: hsl(224, 23%, 55%);
+        font-weight: 900;
+        padding: 25px;
+    }
+}
